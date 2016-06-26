@@ -13,6 +13,8 @@ The project is UWP Windows Universal Platform so it can run on your computer, la
 
 You only need to debug the project once then you will find it in your windows 10 start menu, after that just say "Hey Cortana" to get Cortana to listen, "Please" this is the callable name of the program, you could change it to whatever you want, then "Whatever You Want" Cortana will launch the program and send the MQTT message then close
 
+The program can tell the difference betweeen being launched by cortana and being launched by the user, if launched buy the user a page opens where the user can execute the commands by pressing buttons.
+
 
 ------------
 
