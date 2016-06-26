@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -113,19 +113,19 @@ namespace CortanaCommands
                         break;
 
                     case "Open_Garage_Door":
-                        SendMQTTMessage("GarageDoor/", "OpenGarageDoor", true);
+                        SendMQTTMessage("Cortana/GarageDoor/", "OpenGarageDoor", true);
                         break;
 
                     case "Close_Garage_Door":
-                        SendMQTTMessage("GarageDoor/", "CloseGarageDoor", true);
+                        SendMQTTMessage("Cortana/GarageDoor/", "CloseGarageDoor", true);
                         break;
 
                     case "Dinner_Bell":
-                        SendMQTTMessage("DoorBell", "Chime5", true);
+                        SendMQTTMessage("CortanaDoorBell", "Chime5", true);
                         break;
 
                     case "Door_Bell":
-                        SendMQTTMessage("DoorBell", "Chime1", true);
+                        SendMQTTMessage("Cortana/DoorBell", "Chime1", true);
 
                         break;
 
@@ -147,8 +147,9 @@ namespace CortanaCommands
         public void SendMQTTMessage(string topic, string message, bool close)
         {
             this.InitializeComponent();
-            this.client = new MqttClient("192.168.1.165");
-            this.client.Connect(Guid.NewGuid().ToString(), "guest", "12345");
+            this.client = new MqttClient("iot.eclipse.org");
+            //this.client.Connect(Guid.NewGuid().ToString(), "User", "Password"); // This is how you can use authentication!
+            this.client.Connect(Guid.NewGuid().ToString());
             this.client.Publish(topic, Encoding.UTF8.GetBytes(message));
             if (close == true)
                 { CoreApplication.Exit(); }
