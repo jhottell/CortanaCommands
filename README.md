@@ -15,6 +15,8 @@ You only need to debug the project once then you will find it in your windows 10
 
 The program can tell the difference betweeen being launched by cortana and being launched by the user, if launched buy the user a page opens where the user can execute the commands by pressing buttons.
 
+To test download a MQTT test client like MQTT.fx, connect to iot.eclipse.org, subscribe to topic Cortana/# to wach the MQTT traffic. If the program can't connect to the MQTT Broker it will crash.
+
 
 ------------
 
