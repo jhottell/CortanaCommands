@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-us" Name="CortanaCommands">
+    <CommandPrefix>please</CommandPrefix>
+    <Example>please open the garage door</Example>
+
+    <Command Name="Activate_Alarm">
+      <Example>Activate alarm</Example>
+      <ListenFor>[Would] [you] [please] activate [the] alarm [please]</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase">Activate alarm</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified">Activate {builtin:AppName} alarm</ListenFor>
+      <Feedback>Activating alarm</Feedback>
+      <Navigate />
+    </Command>
+    
+    <Command Name="Open_Garage_Door">
+      <Example>Open garage door</Example>
+      <ListenFor>open [the] garage door</ListenFor>
+      <Feedback>Opening the garage door</Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="Close_Garage_Door">
+      <Example>close garage door</Example>
+      <ListenFor>close [the] garage door</ListenFor>
+      <Feedback>Closing the garage door</Feedback>
+      <Navigate />
+    </Command>
+    
+    <Command Name="Dinner_Bell">
+      <Example>ring the dinner bell</Example>
+      <ListenFor>ring the dinner bell</ListenFor>
+      <Feedback>Lets eat</Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="Door_Bell">
+      <Example>ring the door bell</Example>
+      <ListenFor>ring the door bell</ListenFor>
+      <Feedback>Knock knock</Feedback>
+      <Navigate />
+    </Command>
+
+  </CommandSet>
+</VoiceCommands>

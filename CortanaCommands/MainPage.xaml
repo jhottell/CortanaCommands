@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="CortanaCommands.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CortanaCommands"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Black">
+        <Image x:Name="image" HorizontalAlignment="Left" Height="640" VerticalAlignment="Top" Width="1024" Source="Assets/cortana-Color.jpg" Margin="-10,81,0,-81"/>
+        <Button x:Name="RingDoorBell" Content="Ring Door Bell" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="177" Foreground="#FF7484AC" Background="#33010104" Click="RingDoorBell_Click"/>
+        <Button x:Name="RingDoorBell_Copy" Content="Ring Door Bell" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="177" Foreground="#FF7484AC" Background="#33010104" Click="RingDoorBell_Click"/>
+        <Button x:Name="RingDoorBell_Copy1" Content="Ring Door Bell" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="177" Foreground="#FF7484AC" Background="#33010104" Click="RingDoorBell_Click"/>
+        <Button x:Name="OpenGarageDoor" Content="Open Garage Door" HorizontalAlignment="Left" Margin="369,10,0,0" VerticalAlignment="Top" Width="177" Foreground="#FF7484AC" Background="#33010104" Click="OpenGarageDoor_Click"/>
+        <Button x:Name="RingDinnerBell" Content="Ring Dinner Bell" HorizontalAlignment="Left" Margin="187,10,0,0" VerticalAlignment="Top" Width="177" Foreground="#FF7484AC" Background="#33010104" Click="RingDinnerBell_Click"/>
+        <Button x:Name="CloseGarageDoor" Content="Close Garage Door" HorizontalAlignment="Left" Margin="546,10,0,0" VerticalAlignment="Top" Width="177" Foreground="#FF7484AC" Background="#33010104" Click="CloseGarageDoor_Click"/>
+
+    </Grid>
+</Page>
