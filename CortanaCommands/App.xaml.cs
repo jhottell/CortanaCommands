@@ -121,7 +121,7 @@ namespace CortanaCommands
                         break;
 
                     case "Dinner_Bell":
-                        SendMQTTMessage("CortanaDoorBell", "Chime5", true);
+                        SendMQTTMessage("Cortana/DoorBell", "Chime5", true);
                         break;
 
                     case "Door_Bell":
