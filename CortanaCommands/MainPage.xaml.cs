@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -30,22 +30,22 @@ namespace CortanaCommands
 
         private void RingDoorBell_Click(object sender, RoutedEventArgs e)
         {
-            ((App)Application.Current).SendMQTTMessage("DoorBell/", "Chime1", false);
+            ((App)Application.Current).SendMQTTMessage("Cortana/DoorBell/", "Chime1", false);
         }
 
         private void RingDinnerBell_Click(object sender, RoutedEventArgs e)
         {
-            ((App)Application.Current).SendMQTTMessage("DoorBell/", "Chime5", false);
+            ((App)Application.Current).SendMQTTMessage("Cortana/DoorBell/", "Chime5", false);
         }
 
         private void OpenGarageDoor_Click(object sender, RoutedEventArgs e)
         {
-            ((App)Application.Current).SendMQTTMessage("GarageDoor/", "OpenGarageDoor", false);
+            ((App)Application.Current).SendMQTTMessage("Cortana/GarageDoor/", "OpenGarageDoor", false);
         }
 
         private void CloseGarageDoor_Click(object sender, RoutedEventArgs e)
         {
-            ((App)Application.Current).SendMQTTMessage("GarageDoor/", "CloseGarageDoor", false);
+            ((App)Application.Current).SendMQTTMessage("Cortana/GarageDoor/", "CloseGarageDoor", false);
         }
     }
 }
