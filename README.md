@@ -24,7 +24,7 @@ Tutorial found here:
 
 YouTube video: https://www.youtube.com/watch?v=0d4Q0tzI7X4
 
-Blog post: HTTP://ElectronHacks.com
+Blog post: http://www.electronhacks.com/2016/06/custom-cortana-mqtt-commands/
 
 
 ------------
