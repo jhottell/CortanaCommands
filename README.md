@@ -22,7 +22,7 @@ To test download a MQTT test client like MQTT.fx, connect to iot.eclipse.org, su
 
 Tutorial found here:
 
-YouTube video: HTTP://YouTube.com/ElectronHacks
+YouTube video: https://www.youtube.com/watch?v=0d4Q0tzI7X4
 
 Blog post: HTTP://ElectronHacks.com
 
